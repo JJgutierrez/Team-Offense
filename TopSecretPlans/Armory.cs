@@ -11,10 +11,16 @@ namespace TopSecretPlans
         int numberOfWeapons;
         int ammo;
 
-        public Armory(int numberOfWeapons, int ammo) { }
+        public Armory(int numberOfWeapons, int ammo)
+        {
+        }
 
-        public void TakeWeappons() { }
+        public void TakeWeappons()
+        {
+        }
 
-        public void TakeAmmo() { }
+        public void TakeAmmo()
+        {
+        }
     }
 }

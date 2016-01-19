@@ -17,12 +17,20 @@ namespace TopSecretPlans
 
         public HangarBay(int numberOfRepairStation, int numberOfFuelStation, int numberOfShips, bool hangerDoorOpen, bool repairStationActive, bool fuelStationActive){}
 
-        public int CheckHangerOccupancy() { }
+        //public int CheckHangerOccupancy()
+        //{
+        //}
 
-        public bool IsDoorOpen() { }
+        //public bool IsDoorOpen()
+        //{
+        //}
 
-        public bool IsRepairStationOccupied() { }
+        //public bool IsRepairStationOccupied()
+        //{
+        //}
 
-        public bool IsFuelStationOccupied() { }
+        //public bool IsFuelStationOccupied()
+        //{
+        //}
     }
 }

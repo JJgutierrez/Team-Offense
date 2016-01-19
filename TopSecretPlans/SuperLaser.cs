@@ -10,8 +10,12 @@ namespace TopSecretPlans
     {
         int laserPowerLevel;
         int laserDamage;
-        public SuperLaser(int laserPowerLevel, int laserDamage) { }
+        public SuperLaser(int laserPowerLevel, int laserDamage)
+        {
+        }
 
-        public void FireLaser() { }
+        public void FireLaser()
+        {
+        }
     }
 }
