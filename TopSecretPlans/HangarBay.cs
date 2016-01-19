@@ -8,29 +8,81 @@ namespace TopSecretPlans
 {
     public class HangarBay
     {
-        int numberOfRepairStation;
-        int numberOfFuelStation;
+        int numberOfRepairStations;
+        int numberOfFuelStations;
+        int totalShipsInHanger;
         int numberOfShips;
+        int numberOfEngineers;
+        int numberOfShipsToRepair;
+        int numberOfShipsToFuel;
+        int numberOfDrones;
+        string[] typesOfDrones;
+        string[] typesOfShips;
         bool hangerDoorOpen;
         bool repairStationActive;
         bool fuelStationActive;
 
-        public HangarBay(int numberOfRepairStation, int numberOfFuelStation, int numberOfShips, bool hangerDoorOpen, bool repairStationActive, bool fuelStationActive){}
 
-        //public int CheckHangerOccupancy()
-        //{
-        //}
+        public HangarBay(int numberOfRepairStation, int numberOfFuelStation, int numberOfShips, bool hangerDoorOpen, bool repairStationActive, bool fuelStationActive)
+        {
+        }
 
-        //public bool IsDoorOpen()
-        //{
-        //}
+        public void shipModels()
+        {
+            string[] typesOfShips = { "Super Hornet", "Stealth Bomber", "Invader", "Dragonfly", "Cargo" };
+        }
 
-        //public bool IsRepairStationOccupied()
-        //{
-        //}
+        public void droneModels()
+        {
+            string[] typesOfDrones = { "Predator Warrior", "Hunter", "Hummingbird", "Raven" };
+        }
+        public void CheckHangerOccupancy()
+        {
+            totalShipsInHanger = numberOfShipsToRepair + numberOfShipsToFuel;
+        }
+        public void CheckShipsToRepair()
+        {
+            Console.WriteLine("How many ships need repair?");
+            numberOfShipsToRepair = int.Parse(Console.ReadLine());
+        }
 
-        //public bool IsFuelStationOccupied()
-        //{
-        //}
+        public void CheckShipsToFuel()
+        {
+            Console.WriteLine("How many ships need Fuel?");
+            numberOfShipsToFuel = int.Parse(Console.ReadLine());
+        }
+
+        public void IsDoorOpen()
+        {
+            bool doorOpen = true;
+        }
+
+        public void repairStationCount()
+        {
+            Console.WriteLine("How many repair stations?");
+            numberOfRepairStations = int.Parse(Console.ReadLine());
+        }
+
+        public void fuelStationCount()
+        {
+            Console.WriteLine("How many fuel stations?");
+            numberOfFuelStations = int.Parse(Console.ReadLine());
+        }
+
+        public void TotalNumberOfStatations()
+        {
+            int numberOfStations = numberOfRepairStations + numberOfFuelStations;
+            Console.WriteLine("Total number of stations: " + numberOfStations);
+        }
+
+        public void IsRepairStationOccupied()
+        {
+            bool repairStationOccupied = false;
+        }
+
+        public void IsFuelStationOccupied()
+        {
+            bool fuelStationOccupied = false;
+        }
     }
 }

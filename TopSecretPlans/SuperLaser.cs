@@ -21,11 +21,8 @@ namespace TopSecretPlans
         }
 
         public void FireLaser()
-<<<<<<< HEAD
-        { 
-=======
+      
         {
->>>>>>> 5314ce089d6a2c3a7a3b2d45909481408a2f265a
             laserPowerLevel -= 5;
             Console.WriteLine("Pew, pew, pew!");
             
@@ -47,11 +44,7 @@ namespace TopSecretPlans
             {
                 Recharge();
             }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 5314ce089d6a2c3a7a3b2d45909481408a2f265a
         }
     }
 }
