@@ -12,6 +12,9 @@ namespace TopSecretPlans
         {
             OffenseMode gh = new OffenseMode();
             gh.CheckMode();
+            gh.SystemOk();
+            gh.LaserSound();
+           
         }
     }
 }

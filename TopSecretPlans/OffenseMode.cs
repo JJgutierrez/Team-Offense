@@ -19,6 +19,23 @@ namespace TopSecretPlans
             Console.ReadLine();
 
         }
-        public void 
+        public void SystemOk()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("|-----------------------------|");
+            Console.WriteLine("|------All System........OK!|");
+            Console.WriteLine("|-----------------------------|");
+            Console.ReadLine();
+
+        }
+        public void LaserSound()
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            player.SoundLocation = "peww1.wav";
+            player.Load();
+            player.Play();
+            player.Play();
+        }
     }
 }
