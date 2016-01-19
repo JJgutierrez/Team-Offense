@@ -10,6 +10,8 @@ namespace TopSecretPlans
     {
         static void Main(string[] args)
         {
+            OffenseMode gh = new OffenseMode();
+            gh.CheckMode();
         }
     }
 }

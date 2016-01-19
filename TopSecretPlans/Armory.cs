@@ -28,6 +28,7 @@ namespace TopSecretPlans
 
         public Armory(int numberOfWeapons, int ammo)
         {
+<<<<<<< HEAD
              
         }
         public void weaponsList()
@@ -63,6 +64,16 @@ namespace TopSecretPlans
         public void TakeAmmo()
         {
 
+=======
+        }
+
+        public void TakeWeappons()
+        {
+        }
+
+        public void TakeAmmo()
+        {
+>>>>>>> f5ad2ddf5b48cbb038e91e306b3b068534243ce8
         }
     }
 }
