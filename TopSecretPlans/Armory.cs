@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    class Armory
+    public class Armory
     {
+        int numberOfWeapons;
+        int ammo;
+
+        public Armory(int numberOfWeapons, int ammo) { }
+
+        public void TakeWeappons() { }
+
+        public void TakeAmmo() { }
     }
 }

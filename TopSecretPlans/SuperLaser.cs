@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    class SuperLaser
+    public class SuperLaser
     {
+        int laserPowerLevel;
+        int laserDamage;
+        public SuperLaser(int laserPowerLevel, int laserDamage) { }
+
+        public void FireLaser() { }
     }
 }
