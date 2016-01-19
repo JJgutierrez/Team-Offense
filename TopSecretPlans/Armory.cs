@@ -24,21 +24,25 @@ namespace TopSecretPlans
         int nWStock;
         int nWTake;
         int nWOut;
+        int nATotal;
+        int nAStock;
+        int nAtake;
+        int nAOut;
         bool isWAvailable;
 
         public Armory(int numberOfWeapons, int ammo)
         {
-<<<<<<< HEAD
-             
+
         }
         public void weaponsList()
         {
-            weapons = [guns, laserShooter, grenadeLaunchers, bombThrower];
+            List<string[]> weapons = new List<string[]>() { guns, bombThrower, grenadeLaunchers, laserShooter }; 
         }
+
         public void ammoList()
         {
-            ammoType = [bullets, superLaser, grenades, bombs];
-        }          
+            List<string[]> ammoType = new List<string[]>() { bullets, superLaser, grenades, bombs };
+        }
         public void TotalWeapons()
         {
             nWTotal = nWStock + nWOut;
@@ -49,31 +53,40 @@ namespace TopSecretPlans
             nWStock = nWTotal - nWOut;
             Console.WriteLine(weapons + " in stock:" + nWStock);
         }
-        public void WeaponsOut() 
+        public void WeaponsOut()
         {
             nWOut = nWTotal - nWStock;
             Console.WriteLine(weapons + " out:" + nWOut);
-        }   
+        }
         public void TakeWeapons()
         {
             Console.WriteLine("How many weapons do you want?");
             string numberWeapons = Console.ReadLine();
             int numberOfWeapons = int.Parse(numberWeapons);
-            
-        }        
-        public void TakeAmmo()
-        {
 
-=======
         }
 
-        public void TakeWeappons()
+        public void TotalAmmo()
         {
+            nATotal = nAStock + nAOut;
+            Console.WriteLine("The number of " + ammo + ":" + nATotal);
         }
-
+        public void AmmoInStock()
+        {
+            nAStock = nATotal - nAOut;
+            Console.WriteLine(ammo + " in stock:" + nAStock);
+        }
+        public void AmmoOut()
+        {
+            nAOut = nATotal - nAStock;
+            Console.WriteLine(ammo + " out:" + nAOut);
+        }
         public void TakeAmmo()
         {
->>>>>>> f5ad2ddf5b48cbb038e91e306b3b068534243ce8
+            Console.WriteLine("How much ammo do you want?");
+            string requestedAmmo = Console.ReadLine();
+            ammo = int.Parse(requestedAmmo);
+
         }
     }
 }
